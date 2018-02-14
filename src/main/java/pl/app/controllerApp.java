@@ -10,11 +10,10 @@ public class controllerApp {
     @FXML
     private TextField resultField;
 
-    //private modelApp Model = new modelApp();
-    public double numberOne, numberTwo;
-    public Double result;
+    private double numberOne, numberTwo;
+    private Double result;
     private String operator;
-    private boolean status = true;
+    private boolean statusOperator = true;
 
     public void initialize() {
         setResultField("0");
@@ -30,10 +29,10 @@ public class controllerApp {
     @FXML
     private void processOperator(ActionEvent event) {
         if (!getResultField().equals("") || !getResultField().trim().isEmpty() || getResultField().length() != 0) {
-            if (status) {
+            if (statusOperator) {
                 operator = ((Button) event.getSource()).getText();
                 numberOne = Double.parseDouble(getResultField());
-                status = false;
+                statusOperator = false;
                 setResultField("");
             } else {
                 numberTwo = Double.parseDouble(getResultField());
@@ -44,7 +43,7 @@ public class controllerApp {
                 } else {
                     setResultField(String.valueOf(result));
                 }
-                status = true;
+                statusOperator = true;
             }
         }
     }
@@ -57,6 +56,22 @@ public class controllerApp {
         }
     }
 
+    @FXML
+    private void backspace() {
+        String resultString = getResultField();
+        if ((resultString.length() > 0)) {
+            resultString = resultString.substring(0, resultString.length() - 1);
+            setResultField(resultString);
+        }
+    }
+
+    @FXML
+    private void clearMemory() {
+        setResultField("");
+        numberOne = 0;
+        numberTwo = 0;
+    }
+
     private String getResultField() {
         return resultField.getText();
     }
@@ -66,10 +81,8 @@ public class controllerApp {
     }
 
     private void checkNull() {
-        if ((resultField.getText().equals("0")) || (resultField.getText() == null)) {
-            resultField.setText("");
+        if ((getResultField().equals("0")) || (getResultField() == null)) {
+            setResultField("");
         }
     }
-
-
 }

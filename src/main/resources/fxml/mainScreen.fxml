@@ -7,210 +7,247 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="272.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.app.controllerApp">
-    <children>
-        <TextField fx:id="resultField" alignment="CENTER_RIGHT" disable="true" layoutX="8.0" layoutY="7.0" prefHeight="54.0" prefWidth="256.0">
-            <font>
-                <Font size="24.0" />
-            </font>
-        </TextField>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="130.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="7" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="130.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="8" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="130.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="9" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="130.0" mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="-" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="184.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="4" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="184.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="5" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="238.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="2" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="184.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="6" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="238.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="1" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="238.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="3" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="238.0" mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="108.0" prefWidth="54.0" text="=" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="184.0" mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="+" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="292.0" mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="108.0" text="0" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="292.0" mnemonicParsing="false" onAction="#putDot" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="." textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button fx:id="bBackspace" cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="76.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="←" textAlignment="CENTER">
-            <font>
-                <Font size="24.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="76.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="AC" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="76.0" mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="÷" textAlignment="CENTER">
-            <font>
-                <Font size="22.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-        <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="76.0" mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="x" textAlignment="CENTER">
-            <font>
-                <Font size="18.0" />
-            </font>
-            <effect>
-                <Blend />
-            </effect>
-            <cursor>
-                <Cursor fx:constant="DEFAULT" />
-            </cursor>
-        </Button>
-    </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0"
+      prefWidth="272.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pl.app.controllerApp">
+    <TextField fx:id="resultField" alignment="CENTER_RIGHT" disable="true" layoutX="8.0" layoutY="7.0" prefHeight="54.0"
+               prefWidth="256.0">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </TextField>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="130.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="7" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="130.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="8" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="130.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="9" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="130.0"
+            mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="-" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="184.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="4" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="184.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="5" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="238.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="2" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="184.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="6" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="238.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="1" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="238.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="3" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="238.0"
+            mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="108.0" prefWidth="54.0"
+            text="=" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="184.0"
+            mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="+" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="292.0"
+            mnemonicParsing="false" onAction="#processNumber" pickOnBounds="false" prefHeight="54.0" prefWidth="108.0"
+            text="0" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="292.0"
+            mnemonicParsing="false" onAction="#putDot" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0" text="."
+            textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="28.0" layoutY="76.0"
+            mnemonicParsing="false" onAction="#backspace" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="←" textAlignment="CENTER">
+        <font>
+            <Font size="24.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="82.0" layoutY="76.0"
+            mnemonicParsing="false" onAction="#clearMemory" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="AC" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="136.0" layoutY="76.0"
+            mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="÷" textAlignment="CENTER">
+        <font>
+            <Font size="22.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
+    <Button cache="true" depthTest="ENABLE" focusTraversable="false" layoutX="190.0" layoutY="76.0"
+            mnemonicParsing="false" onAction="#processOperator" pickOnBounds="false" prefHeight="54.0" prefWidth="54.0"
+            text="x" textAlignment="CENTER">
+        <font>
+            <Font size="18.0"/>
+        </font>
+        <effect>
+            <Blend/>
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </Button>
 </Pane>
